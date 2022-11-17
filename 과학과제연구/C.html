@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Programing Introduction</title>
+<style>
+  h3 {
+    font-size:25px;
+  }
+  input[id="menuicon"] {
+    display:none;
+  }
+  input[id="menuicon"] + label {
+    display:block;
+    width:45px;
+    height:30px;
+    position:relative;
+    cursor:pointer;
+    margin-right: 0px;
+  }
+  h2 {
+    margin: 0px;
+    padding: 15px;
+    width:   120px;
+    display: block;
+  }
+  a {
+    text-decoration:none;
+  }
+  h1 a{
+    color:black;
+    text-decoration:none;
+  }
+  h1 {
+    border-bottom: 2px black solid ;
+    margin:0;
+    padding: 20px;
+    display: block;
+  }
+  b {
+    display:block;
+    position:absolute;
+    width:100%;
+    height:4px;
+    border-radius:30px;
+    background:#000;
+    transition:all .35s;
+  }
+  input[id="menuicon"] + label b:nth-child(1) {
+    top:0;
+  }
+  input[id="menuicon"] + label b:nth-child(2) {
+    top:50%;
+    transform:translateY(-50%);
+  }
+  input[id="menuicon"] + label b:nth-child(3) {
+    bottom:0;
+  }
+  input[id="menuicon"]:checked + label b:nth-child(1) {
+    top:50%;
+    transform:translateY(-50%) rotate(45deg);
+    left:300px;
+  }
+  input[id="menuicon"]:checked + label b:nth-child(2) {
+    opacity:0;
+  }
+  input[id="menuicon"]:checked + label b:nth-child(3) {
+    bottom:50%;
+    transform:translateY(50%) rotate(-45deg);
+    left:300px;
+  }
+  div[class="sidebar"] {
+    width:300px;
+    height:100%;
+    background:#222;
+    position:fixed;
+    top:0;
+    left:-300px;
+    z-index:0;
+    transition:all .35s;
+  }
+  input[id="menuicon"]:checked + label + h1 + div  {
+    left:0;
+    z-index: 0;
+    background: #222;
+  }
+  #grid{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+  }
+</style>
+<input type="checkbox" id="menuicon">
+<label for="menuicon">
+<b></b>
+<b></b>
+<b></b>
+</label>
+</head>
+
+<body>
+<h1 style="text-align:center; margin-bottom: 0px;"><a href="Programing.html" style="font-size:45px">C</a></h1>
+  <div class="sidebar">
+    <ul>
+      <h2><a href="Programing.html" style="color:white">HOME</a></h2>
+      <h2><a href="C.html" style="color:white">C</a></h2>
+      <h2><a href="C++.html" style="color:white">C++</a></h2>
+      <h2><a href="python.html" style="color:white">Python</a></h2>
+      <h2><a href="Java.html" style="color:white">Java</a></h2>
+      <h2><a href="Linux.html" style="color:white">Linux</a></h2>
+      <h2><a href="Node js.html" style="color:white">Node.js</a></h2>
+      <h2><a href="html.html" style="color:white">HTMl</a></h2>
+      <h2><a href="JavaScript.html" style="color:white">JavaScript</a></h2>
+      <h2 style="vertical-align:bottom; font-size:20px; margin-top:110px;"><a href="https://forms.gle/1vLH1Z663bRzdj958" style="color:#FF4500">설문조사</a></h2>
+    </ul>
+  </div>
+  <h3>
+- C 언어의 특징<p>
+  1) C언어는 OS, 에디터 등과 같은 시스템 프로그래밍에서부터 그래픽, 업무 관리 등과 같은 응용 프로그래밍의
+    작성에 이르기까지 고급언어와 저급언어의 특성을 고루 겸비하고 있다.<p>
+
+  2) C언어는 함수 단위로 이루어지며 매우 구조화된 형식을 제공하고 있기 때문에 대형 프로그래밍 작업을 할 수
+    있으며 프로그램의 추적과 에러 수정이 매우 용이하다.<p>
+
+  3) C언어는 프로그래머에게 거의 무한대의 자유를 부여하기 때문에 프로그래머의 생각을 그대로 프로그래밍
+    하는데 있어 제한점이 거의 없다.<p>
+
+
+- C 언어의 장점<p>
+  1) C언어를 사용하여 수행할 수 있는 작업의 종류에는 아무런 제한이 없다. C언어는 운영체제, 에디터 등의
+    시스템 프로그래밍에서부터 스프레드시트, 그래픽, 업무 고나리 등의 응용 프로그램의 제작에도 사용될 수 있으며,
+    심지어는 다른 언어의 컴파일러를 개발하기 위해서도 사용될 수 있다.<p>
+
+  2) C언어는 기본적인 실행 루틴조차도 함수로 구성되어 있다. 함수의 특징은 재사용이 가능하다는 것이며
+    라이브러리를 구축하여 모듈화함으로써 구조적인 프로그래밍을 가능하게 해주며 효율성도 높여준다.<p>
+
+  3) C언어는 특정 컴퓨터 기종만을 위해 작성한 언어가 아니기 때문에 사용하는 하드웨어에 관계없이 어느
+    기종에서나 사용할 수 있는 이식성이 강한 언어이며, 사용자 중심의 언어로 누구나 쉽게 사용할 수 있도록
+    개발되었고 발전해 왔다. 이식성이란 특정 시스템에서 작성된 C프로그램이라 하더라도 극히 일부를 수정하거나
+    전혀 수정하지 않아도 다른 시스템에서 실행이 가능함을 의미한다. 만일 수정이 필요한 경우 주프로그램에
+    수반되는 헤더 파일의 몇 가지 엔트리만 바꾸면 된다. 또한 Unix 운영체제가 C로 만들어진 점을 생각하면
+    중대형 컴퓨터 환경이 곧 C의 환경인 것이다.<p>
+
+  4) C언어가 유연하다는 말은 C언어가 문법적으로 많은 것을 허용을 하고 있다는 것을 의미하며, 확장성이 있다는
+    말은 프로그램을 작성하는 데 필요한 루틴들을 함수 형태로 만들어 라이브러리를 구축하고 분할 컴파일을
+    이용하여 모듈화(여러 파일로 나누어서 프로그램을 하는 것)할 수 있다는 것을 의미한다. 실제로 C언어의
+    문법구조는 간단하지만 라이브러리에 내장된 수많은 함수들로 인해 복잡한 언어로 착각되기도 한다.<p>
+
+  5) C언어는 파스칼과 같은 고급언어의 구조화된 특징과 어셈블리어와 같은 하드웨어와 밀접한 저급언어의 특징을
+    고루 갖추고 있으므로 비트 조작 등과 같은 미세한 처리도 쉽게 할 수 있으며, 각종 시스템 자원의 활용 및
+    구조화된 프로그램을 짜면서 하드웨어의 깊숙한 곳까지도 제어할 수 있다는 특징을 가지고 있다. 그밖에도
+    C언어는 어떤 제약조건에 얽매임이 없도록 충분히 구조화되어 있으므로 좋은 프로그래밍 습관을 체득할 수
+    있다는 장점을 가지고 있다.<p></h3>
+</body>
+</html>

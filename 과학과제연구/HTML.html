@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Programing Introduction</title>
+<style>
+h3 {
+  font-size:25px;
+}
+  input[id="menuicon"] {
+    display:none;
+  }
+  input[id="menuicon"] + label {
+    display:block;
+    width:45px;
+    height:30px;
+    position:relative;
+    cursor:pointer;
+    margin-right: 0px;
+  }
+  h2 {
+    margin: 0px;
+    padding: 15px;
+    width:   120px;
+    display: block;
+  }
+  a {
+    text-decoration:none;
+  }
+  h1 a{
+    color:black;
+    text-decoration:none;
+  }
+  h1 {
+    border-bottom: 2px black solid ;
+    margin:0;
+    padding: 20px;
+    display: block;
+  }
+  b {
+    display:block;
+    position:absolute;
+    width:100%;
+    height:4px;
+    border-radius:30px;
+    background:#000;
+    transition:all .35s;
+  }
+  input[id="menuicon"] + label b:nth-child(1) {
+    top:0;
+  }
+  input[id="menuicon"] + label b:nth-child(2) {
+    top:50%;
+    transform:translateY(-50%);
+  }
+  input[id="menuicon"] + label b:nth-child(3) {
+    bottom:0;
+  }
+  input[id="menuicon"]:checked + label b:nth-child(1) {
+    top:50%;
+    transform:translateY(-50%) rotate(45deg);
+    left:300px;
+  }
+  input[id="menuicon"]:checked + label b:nth-child(2) {
+    opacity:0;
+  }
+  input[id="menuicon"]:checked + label b:nth-child(3) {
+    bottom:50%;
+    transform:translateY(50%) rotate(-45deg);
+    left:300px;
+  }
+  div[class="sidebar"] {
+    width:300px;
+    height:100%;
+    background:#222;
+    position:fixed;
+    top:0;
+    left:-300px;
+    z-index:0;
+    transition:all .35s;
+  }
+  input[id="menuicon"]:checked + label + h1 + div  {
+    left:0;
+    z-index: 0;
+    background: #222;
+  }
+  #grid{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+  }
+</style>
+<input type="checkbox" id="menuicon">
+<label for="menuicon">
+<b></b>
+<b></b>
+<b></b>
+</label>
+</head>
+
+<body>
+<h1 style="text-align:center; margin-bottom: 0px;"><a href="Programing.html" style="font-size:45px">HTML</a></h1>
+  <div class="sidebar">
+    <ul>
+      <h2><a href="Programing.html" style="color:white">HOME</a></h2>
+      <h2><a href="C.html" style="color:white">C</a></h2>
+      <h2><a href="C++.html" style="color:white">C++</a></h2>
+      <h2><a href="python.html" style="color:white">Python</a></h2>
+      <h2><a href="Java.html" style="color:white">Java</a></h2>
+      <h2><a href="Linux.html" style="color:white">Linux</a></h2>
+      <h2><a href="Node js.html" style="color:white">Node.js</a></h2>
+      <h2><a href="html.html" style="color:white">HTMl</a></h2>
+      <h2><a href="JavaScript.html" style="color:white">JavaScript</a></h2>
+      <h2 style="vertical-align:bottom; font-size:20px; margin-top:110px;"><a href="https://forms.gle/1vLH1Z663bRzdj958" style="color:#FF4500">설문조사</a></h2>
+    </ul>
+  </div>
+  <h3>1. HTML 정의<p>
+
+ 
+- HTML : Hypertext Markup Language<p>
+ 
+웹 페이지의 구조를 설명하는 프로그래밍 언어의 한 종류로
+웹 브라우저에서 웹 페이지를 볼 수 있도록 웹 페이지의 구조를 설명한다. 
+(웹 페이지의 정보를 알려준다.)
+ 
+인터넷에서 웹을 통해 접근되는 대부분의 웹 페이지들은 HTML로 작성된다.<p>
+2. HTML 특징<p>
+
+ 
+① 구조가 단순하고 문법이 쉽다.<p>
+ 
+다른 프로그래밍 언어에 비해 단순한 구조를 가지고 논리적이고 연산적인 요소가 없다.<p>
+ 
+② 컴파일 되지 않은 텍스트 문서이기 때문에 편집이 쉽다.<p>
+ 
+텍스트 문서를 기계 언어로 바꾸는 컴파일 작업이 필요없다.
+실행되는 프로그램에 따라 웹 문서, 텍스트 문서가 되기 때문에
+문서를 편집하여 수정된 문서를 즉시 적용이 가능하다.<p>
+ 
+③ 마크업 언어<p>
+ 
+마크업(Markup) : 형태나 효과를 정의하는 명령을 마크로 삽입하여 이루어지는 언어<p>
+ 
+마크 삽입만으로 형식을 정의하므로 파일 용량이 매우 작아진다.
+(이미지 등의 파일을 문서에 직접 포함하지 않고 외부에서 불러올 수 있도록 함)<p>
+ 
+마크업 언어의 'link' 로 여러 장의 문서를 하나의 파일에 포함하지 않고 분리하여 링크시킬 수 있다.<p>
+ 
+④ 플랫폼에 독립적인 언어<p>
+ 
+HTML 문서는 어떤 운영체제에서도 웹브라우저만 있으면 표시할 수 있다.
+웹브라우저는 HTML 표준에 기준을 두고 제작된다.<p>
+3. HTML 태그 (element)<p>
+
+ 
+HTML 은 다양한 구성 요소(element) 로 이루어지는데, 각각의 요소는 태그(tag) 로 표현된다.
+웹 브라우저는 HTML 태그를 보고 페이지의 컨텐츠를 렌더링한다.
+ 
+태그는 대소문자를 구분하지 않는다. (하지만 HTML 표준은 소문자로 사용한다.)<p>
+4. HTML 문서의 구조<p>
+
+ 
+<!DOCTYPE html> html lang = "ko" head title 사이트 제목 /title meta charset = "utf-8" /head body 본문 영역 /body /html<p>
+ 
+ 
+<!DOCTYPE html><p>
+브라우저에게 문서 유형을 알려주는 선언으로
+페이지 상단 (html 태그 이전)에 한 번만 표시한다.<p>
+ 
+또한 대소문자를 구분하지 않으므로 <!doctype html>도 가능하지만, HTML 5 표준은 대문자이다.<p>
+ 
+ 
+html ~ /html<p>
+html 문서의 정보와 내용의 시작과 끝을 알린다.<p>
+ 
+html lang = "ko" : lang 라는 속성을 이용해서 문서에서 사용할 언어를 지정할 수 있다.
+                                  ko(한국어), de(독일어), en(영어). fr(프랑스어), ja(일본어), zh(중국어)<p>
+ 
+검색 사이트에서 정확하게 검색을 유도하기 위해 사용된다.<p>
+ 
+ 
+head ~ head<p>
+웹 브라우저 화면에는 보이지 않지만, 웹 브라우저가 알아두어야 할 정보들이 입력된다.<p>
+ 
+    title ~ title : 웹 브라우저에 표시될 사이트 제목이 들어간다.<p>
+ 
+    meta : 문자 인코딩 및 문서 키워드, 요약 정보 등이 들어간다.<p>
+    meta charset = "utf-8" : 문자 인코딩을 utf-8 로 지정한다.<p></h3>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Programing Introduction</title>
+<style>
+h3 {
+  font-size:25px;
+}
+  input[id="menuicon"] {
+    display:none;
+  }
+  input[id="menuicon"] + label {
+    display:block;
+    width:45px;
+    height:30px;
+    position:relative;
+    cursor:pointer;
+    margin-right: 0px;
+  }
+  h2 {
+    margin: 0px;
+    padding: 15px;
+    width:   120px;
+    display: block;
+  }
+  a {
+    text-decoration:none;
+  }
+  h1 a{
+    color:black;
+    text-decoration:none;
+  }
+  h1 {
+    border-bottom: 2px black solid ;
+    margin:0;
+    padding: 20px;
+    display: block;
+  }
+  b {
+    display:block;
+    position:absolute;
+    width:100%;
+    height:4px;
+    border-radius:30px;
+    background:#000;
+    transition:all .35s;
+  }
+  input[id="menuicon"] + label b:nth-child(1) {
+    top:0;
+  }
+  input[id="menuicon"] + label b:nth-child(2) {
+    top:50%;
+    transform:translateY(-50%);
+  }
+  input[id="menuicon"] + label b:nth-child(3) {
+    bottom:0;
+  }
+  input[id="menuicon"]:checked + label b:nth-child(1) {
+    top:50%;
+    transform:translateY(-50%) rotate(45deg);
+    left:300px;
+  }
+  input[id="menuicon"]:checked + label b:nth-child(2) {
+    opacity:0;
+  }
+  input[id="menuicon"]:checked + label b:nth-child(3) {
+    bottom:50%;
+    transform:translateY(50%) rotate(-45deg);
+    left:300px;
+  }
+  div[class="sidebar"] {
+    width:300px;
+    height:100%;
+    background:#222;
+    position:fixed;
+    top:0;
+    left:-300px;
+    z-index:0;
+    transition:all .35s;
+  }
+  input[id="menuicon"]:checked + label + h1 + div  {
+    left:0;
+    z-index: 0;
+    background: #222;
+  }
+  #grid{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+  }
+</style>
+<input type="checkbox" id="menuicon">
+<label for="menuicon">
+<b></b>
+<b></b>
+<b></b>
+</label>
+</head>
+
+<body>
+<h1 style="text-align:center; margin-bottom: 0px;"><a href="Programing.html" style="font-size:45px">Programing</a></h1>
+  <div class="sidebar">
+    <ul>
+      <h2><a href="Programing.html" style="color:white">HOME</a></h2>
+      <h2><a href="C.html" style="color:white">C</a></h2>
+      <h2><a href="C++.html" style="color:white">C++</a></h2>
+      <h2><a href="python.html" style="color:white">Python</a></h2>
+      <h2><a href="Java.html" style="color:white">Java</a></h2>
+      <h2><a href="Linux.html" style="color:white">Linux</a></h2>
+      <h2><a href="Node js.html" style="color:white">Node.js</a></h2>
+      <h2><a href="html.html" style="color:white">HTMl</a></h2>
+      <h2><a href="JavaScript.html" style="color:white">JavaScript</a></h2>
+      <h2 style="vertical-align:bottom; font-size:20px; margin-top:110px;"><a href="https://forms.gle/1vLH1Z663bRzdj958" style="color:#FF4500">설문조사</a></h2>
+    </ul>
+  </div>
+  <h3><br>프로그램을 만드는 것을 뜻한다. 그리고 여기에서의 프로그램은 대체로 컴퓨터에서 동작하는 프로그램을 말한다. 따라서 프로그래밍이라고 하면 대개 컴퓨터프로그래밍을 뜻한다. 기술을 다루는 기술이라고 하기도 한다.</br>
+
+  <br>프로그래밍을 하는 도구를 "개발자도구" 또는 "개발환경"이라고 부르고 프로그래밍 언어는 프로그래밍을 하는 방식 또는 절차를 말하며 프로그래밍을 하는 사람이 프로그래머이다.</br>
+
+  <br>예전에는 사람이 수동으로 프로그래밍하던 어셈블리어를 이제는 컴파일러가 자동으로 만들어 준다. 그러나 사람이 할 일은 줄어들지 않았고 그저 능률만 늘었는데, 이는 구현보다 디자인에 더 집중할 수 있게 돼서 더 대규모의 소프트웨어 프로젝트가 가능해졌기 때문이다. 물론 디자인에만 몰두하고 구현은 무시해도 될 정도까지는 아니라 프로그래밍 언어의 세계는 호락호락하지 않은데, 디자인 패턴이라는 것들이 결국은 디자인을 구현으로 옮기는 표준적인 기교들을 소개하고 있다는 것부터가 이를 반증한다.</br>
+
+  <br>그리고 고차원 언어들의 강세에도 불구하고, 어셈블리어 프로그래밍은 특정 분야에서 계속 쓰이고 있는데, 보통은 성능상의 이유나 명령어 수준에서 본인이 의도한 정확한 동작이 필요할때 부분적으로 쓴다. 물론 이런 짓을 하면 해당언어와 어셈블리어의 간극을 채우기 위한 추가 노력이 들어가야 한다. 가령, C컴파일러는 컴파일 과정에서 나름 변수와 메모리주소의 사용정보를 트래킹하고있는데, 중간에 어셈블리어가 끼어서 멋대로 이를 바꿔놓으면 컴파일 과정의 정보가 훼손된다. 따라서 인라인 어셈블리를 쓸때는, 해당 어셈블리선언이 건드리는 데이터들을 정확히 명시해서 컴파일러정보가 훼손되지 않도록 막아야 하고, 이를 실수없이 해내는 건 오로지 프로그래머의 몫이다. 결국 안 해본 사람은 의외겠지만 생으로 어셈블리 프로그래밍을 하는 것보다 C언어에 일부 어셈블리 명령을 끼워넣는 게 훨씬 복잡하다. 그래서 보통은 가능하면 언어 수준에서 원하는 명령어가 나오도록 컴파일러의 작동을 잘 생각하면서 코드를 짜는 게 더 낫다. 하지만 어느 경우든 컴파일러 작동을 예측하는 지식이 필요한 건 변함이 없다. 그나마 이런 예측이 제일 쉬운 게 C언어이고, 그래서 C언어가 여전히 OS나 드라이버처럼 하드웨어와 밀접한 프로그램 작성에는 탁월한 선택이다.</br>
+
+  <br>가끔, 자신이 목표라 하는 시스템의 명령어집합구조(Instruction Set Architecture, ISA)에 대한 컴파일러지원이 구현되지않은 경우, 기계어나 어셈블리어로 프로그래밍 하는 수밖에 없다. 그러나 대부분의 회사라면 ISA를 새로 정의하면 컴파일러 부분도 본인들이 지원해준다. 이건 목표로 하는 시스템이 컴파일러를 돌리기에 벅찰 정도로 매우 저렴한 시스템이라도 마찬가지다. 이러한 경우, 다른 컴퓨터에서 컴파일작업을 수행하는 크로스 컴파일을 한다.  </br>
+
+  <br>대부분의 프로그래밍은 컴퓨터의 사실상의 표준 문자 체계인 아스키 코드를 그 기반에 둔다. 가나나 한글, 한자 등으로 프로그래밍할 수 있는 도구는 스크래치처럼 교육용으로 많이쓰인다. 이말은, 데이터를 뜻하는 게 아니고 코드를 뜻한다. 코드와 데이터는 서로 개념이 다르니 주의.</br></h3>
+</body>
+</html>

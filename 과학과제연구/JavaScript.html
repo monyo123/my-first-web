@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Programing Introduction</title>
+<style>
+h3 {
+  font-size:25px;
+}
+  input[id="menuicon"] {
+    display:none;
+  }
+  input[id="menuicon"] + label {
+    display:block;
+    width:45px;
+    height:30px;
+    position:relative;
+    cursor:pointer;
+    margin-right: 0px;
+  }
+  h2 {
+    margin: 0px;
+    padding: 15px;
+    width:   120px;
+    display: block;
+  }
+  a {
+    text-decoration:none;
+  }
+  h1 a{
+    color:black;
+    text-decoration:none;
+  }
+  h1 {
+    border-bottom: 2px black solid ;
+    margin:0;
+    padding: 20px;
+    display: block;
+  }
+  b {
+    display:block;
+    position:absolute;
+    width:100%;
+    height:4px;
+    border-radius:30px;
+    background:#000;
+    transition:all .35s;
+  }
+  input[id="menuicon"] + label b:nth-child(1) {
+    top:0;
+  }
+  input[id="menuicon"] + label b:nth-child(2) {
+    top:50%;
+    transform:translateY(-50%);
+  }
+  input[id="menuicon"] + label b:nth-child(3) {
+    bottom:0;
+  }
+  input[id="menuicon"]:checked + label b:nth-child(1) {
+    top:50%;
+    transform:translateY(-50%) rotate(45deg);
+    left:300px;
+  }
+  input[id="menuicon"]:checked + label b:nth-child(2) {
+    opacity:0;
+  }
+  input[id="menuicon"]:checked + label b:nth-child(3) {
+    bottom:50%;
+    transform:translateY(50%) rotate(-45deg);
+    left:300px;
+  }
+  div[class="sidebar"] {
+    width:300px;
+    height:100%;
+    background:#222;
+    position:fixed;
+    top:0;
+    left:-300px;
+    z-index:0;
+    transition:all .35s;
+  }
+  input[id="menuicon"]:checked + label + h1 + div  {
+    left:0;
+    z-index: 0;
+    background: #222;
+  }
+  #grid{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+  }
+</style>
+<input type="checkbox" id="menuicon">
+<label for="menuicon">
+<b></b>
+<b></b>
+<b></b>
+</label>
+</head>
+
+<body>
+<h1 style="text-align:center; margin-bottom: 0px;"><a href="Programing.html" style="font-size:45px">JavaScript</a></h1>
+  <div class="sidebar">
+    <ul>
+      <h2><a href="Programing.html" style="color:white">HOME</a></h2>
+      <h2><a href="C.html" style="color:white">C</a></h2>
+      <h2><a href="C++.html" style="color:white">C++</a></h2>
+      <h2><a href="python.html" style="color:white">Python</a></h2>
+      <h2><a href="Java.html" style="color:white">Java</a></h2>
+      <h2><a href="Linux.html" style="color:white">Linux</a></h2>
+      <h2><a href="Node js.html" style="color:white">Node.js</a></h2>
+      <h2><a href="html.html" style="color:white">HTMl</a></h2>
+      <h2><a href="JavaScript.html" style="color:white">JavaScript</a></h2>
+      <h2 style="vertical-align:bottom; font-size:20px; margin-top:110px;"><a href="https://forms.gle/1vLH1Z663bRzdj958" style="color:#FF4500">설문조사</a></h2>
+    </ul>
+  </div>
+  <h3>자바스크립트(JavaScript)는 객체(object) 기반의 스크립트 언어입니다. HTML로는 웹의 내용을 작성하고, CSS로는 웹을 디자인하며, 자바스크립트로는 웹의 동작을 구현할 수 있습니다.<p>
+Ecma International의 프로토타입 기반의 프로그래밍 언어로, 스크립트 언어에 해당된다. 특수한 목적이 아닌 이상 모든 웹 브라우저에 인터프리터가 내장되어 있다. 오늘날 HTML, CSS와 함께 웹을 구성하는 요소 중 하나다. HTML이 웹 페이지의 기본 구조를 담당하고, CSS가 디자인을 담당한다면 JavaScript는 클라이언트 단에서 웹 페이지가 동작하는 것을 담당한다. 웹 페이지를 자동차에 비유하자면, HTML은 자동차의 뼈대, CSS는 자동차의 외관, JavaScript는 자동차의 동력이라고 볼 수 있다.<p>
+
+첫 탄생은 1995년 넷스케이프에서 근무하던 브랜든 아이크가 10일만에 설계한 것으로부터 시작한다. 처음에는 Mocha라는 이름이었지만 4달 만에 LiveScript라는 이름으로 개명하고 다시 3달 후에는 JavaScript라는 이름이 되어 오늘날까지 이어지고 있다. 'Java와 구문이 유사해서 이름을 JavaScript로 명명했다'는 표면상의 이유를 대지만 그 속은 Java의 유명세를 타서 묻어가려고 의도적으로 그렇게 작명한 것이다. <p>
+JavaScript는 본래 넷스케이프 서버에서 애플리케이션을 제작하기 위한 고수준 추상화 언어로 설계되어 넷스케이프 내비게이터에 LiveScript 이름의 인터프리터를 넣었다. 그러나 JavaScript는 당시 기준에서 무리한 추상화[3]를 시도했기 때문에 성능 문제가 많았다. 하지만 JavaScript의 막강한 기능은 웹 브라우저에서 필수적으로 구현할만큼 성장해갔다. 마이크로소프트에서는 이를 채택함과 동시에 자사만의 문법을 끼워 넣어 JScript를 탄생시켰다. 하지만 JavaScript는 각 웹 브라우저마다 서로 호환되지 않는 것이 문제였기에 단일화가 필요했다. 때문에 1997년 단일화 움직임이 시작되고 ECMAScript5가 제정되고 표준 문제가 해결되었고 이후 거침없는 발전을 보였다.<p>
+
+JavaScript는 C에서 영향을 받은 C-Family 언어로 기본적인 문법이 유사 중괄호로 구분하는 블럭, 세미콜론으로 줄이 끝남을 알리는 것, 변수 쓰는 법, 연산자 사용법 등 기초적인 문법이 C 문법과 크게 다르지 않다. <p>
+JavaScript는 동적 타이핑, 약타입 언어고, 간단한 문법에 코딩 방법이 비교적 유연하기 때문에 초기 진입장벽이 거의 없어서 쉽다고 이야기 되지만, 깊이 들어가 보면 매우 변태적인 특이한 언어이자 매우 우수한 설계를 자랑하는 강력한 언어이다. 편하면서도 강력한 텍스트 표기법(JSON(JavaScript Object Notation))을 가졌으며, 구조적으로 비동기 프로그래밍에 유리하다. 이러한 비동기 프로그래밍에 특화된 특징은 이후 Node.js를 탄생시키며 JavaScript라는 언어의 사용 반경을 폭발적으로 늘리는 데 기여하게 된다. 진입 장벽은 낮다.<p></h3>
+</body>
+</html>

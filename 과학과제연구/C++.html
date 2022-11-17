@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Programing Introduction</title>
+<style>
+h3 {
+  font-size:25px;
+}
+input[id="menuicon"] {
+  display:none;
+}
+  input[id="menuicon"] + label {
+    display:block;
+    width:45px;
+    height:30px;
+    position:relative;
+    cursor:pointer;
+    margin-right: 0px;
+  }
+  h2 {
+    margin: 0px;
+    padding: 15px;
+    width:   120px;
+    display: block;
+  }
+  a {
+    text-decoration:none;
+  }
+  h1 a{
+    color:black;
+    text-decoration:none;
+  }
+  h1 {
+    border-bottom: 2px black solid ;
+    margin:0;
+    padding: 20px;
+    display: block;
+  }
+  b {
+    display:block;
+    position:absolute;
+    width:100%;
+    height:4px;
+    border-radius:30px;
+    background:#000;
+    transition:all .35s;
+  }
+  input[id="menuicon"] + label b:nth-child(1) {
+    top:0;
+  }
+  input[id="menuicon"] + label b:nth-child(2) {
+    top:50%;
+    transform:translateY(-50%);
+  }
+  input[id="menuicon"] + label b:nth-child(3) {
+    bottom:0;
+  }
+  input[id="menuicon"]:checked + label b:nth-child(1) {
+    top:50%;
+    transform:translateY(-50%) rotate(45deg);
+    left:300px;
+  }
+  input[id="menuicon"]:checked + label b:nth-child(2) {
+    opacity:0;
+  }
+  input[id="menuicon"]:checked + label b:nth-child(3) {
+    bottom:50%;
+    transform:translateY(50%) rotate(-45deg);
+    left:300px;
+  }
+  div[class="sidebar"] {
+    width:300px;
+    height:100%;
+    background:#222;
+    position:fixed;
+    top:0;
+    left:-300px;
+    z-index:0;
+    transition:all .35s;
+  }
+  input[id="menuicon"]:checked + label + h1 + div  {
+    left:0;
+    z-index: 0;
+    background: #222;
+  }
+  #grid{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+  }
+</style>
+<input type="checkbox" id="menuicon">
+<label for="menuicon">
+<b></b>
+<b></b>
+<b></b>
+</label>
+</head>
+
+<body>
+<h1 style="text-align:center; margin-bottom: 0px;"><a href="Programing.html" style="font-size:45px">C++</a></h1>
+  <div class="sidebar">
+    <ul>
+      <h2><a href="Programing.html" style="color:white">HOME</a></h2>
+      <h2><a href="C.html" style="color:white">C</a></h2>
+      <h2><a href="C++.html" style="color:white">C++</a></h2>
+      <h2><a href="python.html" style="color:white">Python</a></h2>
+      <h2><a href="Java.html" style="color:white">Java</a></h2>
+      <h2><a href="Linux.html" style="color:white">Linux</a></h2>
+      <h2><a href="Node js.html" style="color:white">Node.js</a></h2>
+      <h2><a href="html.html" style="color:white">HTMl</a></h2>
+      <h2><a href="JavaScript.html" style="color:white">JavaScript</a></h2>
+      <h2 style="vertical-align:bottom; font-size:20px; margin-top:110px;"><a href="https://forms.gle/1vLH1Z663bRzdj958" style="color:#FF4500">설문조사</a></h2>
+    </ul>
+  </div>
+<h3>
+- C++ 언어의 기능<p>
+  1) C++에서는 선언되지 않은 함수를 이용하러면 에러가 발생한다.<p>
+
+  2) C++에서는 값을 리턴하도록 선언되어 있는 함수에서 값을 리턴하지 않으면 에러가 발생 한다.<p>
+
+  3) C++와 ANSI C는 문자 배열을 초기화할 때 사용하는 문자열 상수의 형을 서로 다르게 해석한다. C++에서는
+    문자열 상수를 종료시키는 널 문자를 위한 공간을 제공하지 않기 때문이다.<p>
+
+- C++와 C의 몇 가지 차이점<p>
+  1) C에서 함수에 매개변수가 없을 때 원형(프로토타입)의 매개변수 리스트에 void를 사용해야 했지만 C++에서는
+    void를 사용하지 않아도 된다.<p>
+
+  2) C++ 프로그램에서는 모든 함수가 반드시 원형으로 선언되어야 한다. C에서도 원형을 선언할 수 있지만
+    기능상으로 선택사항이다. 그러나 멤버 함수의 원형은 클래스 내에서 일반적인 원형으로 선언되므로 별개의
+    다른 원형을 선언할 필요는 없다.<p>
+
+  3) C++에서는 함수가 변환 값을 가지고 있다고 선언하였으면 반드시 값을 반환해야한다. 이것은 함수가 void가 아닌
+    반환 값을 가지고 있다면 함수 내에 값을 반환하는 return문이 반드시 존재해야 한다는 것을 의미한다. C에서는
+    void 함수가 아니더라도 값을 반환하지 않으면 의미 없는 값이 반환되므로 실제로 값을 반환하지 않아도 된다.<p>
+
+  4) C에서 지역변수는 그것을 사용하는 문장 이전에 블록의 시작에서만 선언되어야 했다. 그러나 C++에서는 어느
+    곳에서나 지역변수를 선언할 수 있다. 이러한 접근방법은 지역변수가 처음 사용되는 부분 가까이에서 지역변수를
+    선언할 수 있기 때문에 원하지 않는 부작용을 줄일 수 있게 된다.<p></h3>
+</html>

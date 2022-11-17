@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Programing Introduction</title>
+<style>
+h3 {
+  font-size:25px;
+}
+  input[id="menuicon"] {
+    display:none;
+  }
+  input[id="menuicon"] + label {
+    display:block;
+    width:45px;
+    height:30px;
+    position:relative;
+    cursor:pointer;
+    margin-right: 0px;
+  }
+  h2 {
+    margin: 0px;
+    padding: 15px;
+    width:   120px;
+    display: block;
+  }
+  a {
+    text-decoration:none;
+  }
+  h1 a{
+    color:black;
+    text-decoration:none;
+  }
+  h1 {
+    border-bottom: 2px black solid ;
+    margin:0;
+    padding: 20px;
+    display: block;
+  }
+  b {
+    display:block;
+    position:absolute;
+    width:100%;
+    height:4px;
+    border-radius:30px;
+    background:#000;
+    transition:all .35s;
+  }
+  input[id="menuicon"] + label b:nth-child(1) {
+    top:0;
+  }
+  input[id="menuicon"] + label b:nth-child(2) {
+    top:50%;
+    transform:translateY(-50%);
+  }
+  input[id="menuicon"] + label b:nth-child(3) {
+    bottom:0;
+  }
+  input[id="menuicon"]:checked + label b:nth-child(1) {
+    top:50%;
+    transform:translateY(-50%) rotate(45deg);
+    left:300px;
+  }
+  input[id="menuicon"]:checked + label b:nth-child(2) {
+    opacity:0;
+  }
+  input[id="menuicon"]:checked + label b:nth-child(3) {
+    bottom:50%;
+    transform:translateY(50%) rotate(-45deg);
+    left:300px;
+  }
+  div[class="sidebar"] {
+    width:300px;
+    height:100%;
+    background:#222;
+    position:fixed;
+    top:0;
+    left:-300px;
+    z-index:0;
+    transition:all .35s;
+  }
+  input[id="menuicon"]:checked + label + h1 + div  {
+    left:0;
+    z-index: 0;
+    background: #222;
+  }
+  #grid{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+  }
+</style>
+<input type="checkbox" id="menuicon">
+<label for="menuicon">
+<b></b>
+<b></b>
+<b></b>
+</label>
+</head>
+
+<body>
+<h1 style="text-align:center; margin-bottom: 0px;"><a href="Programing.html" style="font-size:45px">Python</a></h1>
+  <div class="sidebar">
+    <ul>
+      <h2><a href="Programing.html" style="color:white">HOME</a></h2>
+      <h2><a href="C.html" style="color:white">C</a></h2>
+      <h2><a href="C++.html" style="color:white">C++</a></h2>
+      <h2><a href="python.html" style="color:white">Python</a></h2>
+      <h2><a href="Java.html" style="color:white">Java</a></h2>
+      <h2><a href="Linux.html" style="color:white">Linux</a></h2>
+      <h2><a href="Node js.html" style="color:white">Node.js</a></h2>
+      <h2><a href="html.html" style="color:white">HTMl</a></h2>
+      <h2><a href="JavaScript.html" style="color:white">JavaScript</a></h2>
+      <h2 style="vertical-align:bottom; font-size:20px; margin-top:110px;"><a href="https://forms.gle/1vLH1Z663bRzdj958" style="color:#FF4500">설문조사</a></h2>
+    </ul>
+  </div>
+  <h3>파이썬은 네덜란드 개발자 귀도 반 로섬(Guido van Rossum)이 만든 언어다. 현재 파이썬은 대형 글로벌 기업부터 스타트업까지 다양하게 안정적으로 활용되고 있다. 구글, 야후, 유럽 입자 물리 연구소(CERN), 미국항공우주국(NASA) 등이 파이썬을 이용해 서비스를 구축했다. 귀도 반 로섬은 2005년부터 아예 구글에 합류했으며, 약 7년 동안 구글에서 파이썬 관련 프로젝트를 이끌었다. 실제로 구글은 파이썬을 많이 사용하는 기업으로 알려져 있다. 구글 내부에서 사용하는 코드리뷰 도구, ‘앱 엔진’ 같은 클라우드 제품 등이 파이썬을 이용해 만들어졌다.<p>
+
+코드 경진대회 서비스를 제공하는 코드이벨은 파이썬을 ‘2016년 프로그래밍 인기 순위 1위’로 꼽았으며, 프로그래밍 인기 순위를 매달 집계하는 레드몽크(RedMonk)나 티오베(Tiobe)도 파이썬의 인기 순위는 5위 안에 들어왔다. 그만큼 최근 인기가 높아지고 있다.<p>
+
+파이썬은 어떤 장점이 있어 사람들에게 관심을 받을까? 먼저 파이썬은 문법이 간결하고 표현 구조가 인간의 사고 체계와 닮아 있다. 이 덕분에 초보자도 쉽게 배울 수 있다. 이러한 특징은 유지 보수와 관리도 쉽게 하도록 돕는다. 파이썬은 또한 외부에 풍부한 라이브러리가 있어 다양한 용도로 확장하기 좋다. 실제로 파이썬은 웹 개발 뿐만 아니라 데이터 분석, 머신러닝, 그래픽, 학술 연구 등 여러 분야에서 활용되고 있다. 생산성이 높은 것도 큰 장점이다.<p>
+
+파이썬은 과학과 공학 분야에서 필요한 여러 기능을 기본적으로 제공한다. 우선 언어 자체적으로 64비트를 넘어가는 매우 큰 정수를 지원한다.[21][22] 또한 허수를 기본적으로 지원하며, 표준 라이브러리의 decimal, fractions 모듈을 사용해 소수점과 유리수를 정밀하게 다룰 수 있다. 따라서 이러한 기능을 다루는 암호학과 통계 분야에서 쓰기에 알맞다.<p>
+
+파이썬 생태계 또한 공학 및 과학 분야를 빵빵하게 지원한다. 복잡한 수치와 큰 데이터를 다루는 연산에 알맞은 NumPy, SciPy, pandas, 데이터를 그래프로 시각화하는 Matplotlib, 코드와 데이터를 함께 다룰 수 있는 Jupyter Notebook 등의 강력한 패키지와 도구들을 무료로 사용할 수 있다.
+파이썬은 위의 특징 때문에 교육용 프로그래밍 언어로 각광받고 있다. 현재 세계 유수의 대학교들은 프로그래밍 개론에서 쓰이는 언어를 C, C++나 Java에서 파이썬으로 바꾸었다.<p>
+
+물론 파이썬도 단점이 있다. 예를 들어 속도가 느리다는 평가도 있으며, 모바일 앱 개발 환경에서 사용하기 힘들다. 또한 컴파일 시 타입 검사가 이뤄지지 않아 개발자가 실수할 여지가 조금 더 많다거나 멀티코어를 활용하기 쉽지 않다는 지적도 있다.<p>
+</body>
+</html>

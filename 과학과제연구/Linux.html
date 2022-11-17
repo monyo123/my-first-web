@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Programing Introduction</title>
+<style>
+h3 {
+  font-size:25px;
+}
+  input[id="menuicon"] {
+    display:none;
+  }
+  input[id="menuicon"] + label {
+    display:block;
+    width:45px;
+    height:30px;
+    position:relative;
+    cursor:pointer;
+    margin-right: 0px;
+  }
+  h2 {
+    margin: 0px;
+    padding: 15px;
+    width:   120px;
+    display: block;
+  }
+  a {
+    text-decoration:none;
+  }
+  h1 a{
+    color:black;
+    text-decoration:none;
+  }
+  h1 {
+    border-bottom: 2px black solid ;
+    margin:0;
+    padding: 20px;
+    display: block;
+  }
+  b {
+    display:block;
+    position:absolute;
+    width:100%;
+    height:4px;
+    border-radius:30px;
+    background:#000;
+    transition:all .35s;
+  }
+  input[id="menuicon"] + label b:nth-child(1) {
+    top:0;
+  }
+  input[id="menuicon"] + label b:nth-child(2) {
+    top:50%;
+    transform:translateY(-50%);
+  }
+  input[id="menuicon"] + label b:nth-child(3) {
+    bottom:0;
+  }
+  input[id="menuicon"]:checked + label b:nth-child(1) {
+    top:50%;
+    transform:translateY(-50%) rotate(45deg);
+    left:300px;
+  }
+  input[id="menuicon"]:checked + label b:nth-child(2) {
+    opacity:0;
+  }
+  input[id="menuicon"]:checked + label b:nth-child(3) {
+    bottom:50%;
+    transform:translateY(50%) rotate(-45deg);
+    left:300px;
+  }
+  div[class="sidebar"] {
+    width:300px;
+    height:100%;
+    background:#222;
+    position:fixed;
+    top:0;
+    left:-300px;
+    z-index:0;
+    transition:all .35s;
+  }
+  input[id="menuicon"]:checked + label + h1 + div  {
+    left:0;
+    z-index: 0;
+    background: #222;
+  }
+  #grid{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+  }
+</style>
+<input type="checkbox" id="menuicon">
+<label for="menuicon">
+<b></b>
+<b></b>
+<b></b>
+</label>
+</head>
+
+<body>
+<h1 style="text-align:center; margin-bottom: 0px;"><a href="Programing.html" sstyle="font-size:45px">Linux</a></h1>
+  <div class="sidebar">
+    <ul>
+      <h2><a href="Programing.html" style="color:white">HOME</a></h2>
+      <h2><a href="C.html" style="color:white">C</a></h2>
+      <h2><a href="C++.html" style="color:white">C++</a></h2>
+      <h2><a href="python.html" style="color:white">Python</a></h2>
+      <h2><a href="Java.html" style="color:white">Java</a></h2>
+      <h2><a href="Linux.html" style="color:white">Linux</a></h2>
+      <h2><a href="Node js.html" style="color:white">Node.js</a></h2>
+      <h2><a href="html.html" style="color:white">HTMl</a></h2>
+      <h2><a href="JavaScript.html" style="color:white">JavaScript</a></h2>
+      <h2 style="vertical-align:bottom; font-size:20px; margin-top:110px;"><a href="https://forms.gle/1vLH1Z663bRzdj958" style="color:#FF4500">설문조사</a></h2>
+    </ul>
+  </div>
+  <h3>Linux는 란드 헬싱키 공대 대학생이었던 리누스 토르발스가 미닉스 OS를 사용하는 컴퓨터에서 작업해서 만든 언어이다. 그 때부터 꾸준히 발전하여 현재는 데스크톱/랩톱 용도 뿐만아니라 웹 서버, 클라우드, 안드로이드 및 포터블 게이밍 콘솔등의 모바일 기기, 각종 임베디드 기기 (가전용, 상업용, 산업용, 차량용 기기)등을 구동하는 운영 체제가 되었다.<p>
+
+  Linux가 쓰이는 서버 쪽에서의서버쪽 성능이나 안정성 등은 리눅스가 가장 뛰어나다는 평가를 자주 받는다. G-WAN이라는 웹서버 소프트웨어는 원래 윈도우 서버용으로 개발중이었는데, 윈도우와 리눅스에서 네트워크 성능 를 해본 결과 윈도우에서의 성능이 처참할 정도로 밀렸다. 리눅스의 위상은 엄청나다. 무료인 데다가, 오픈 소스고, 리눅스에 익숙한 인력도 많고, 안정성도 높은 편이니 서버 운영체제로서는 최적인 셈이다. 서버용 프로그 대부분이 리눅스를 지원하거나, 리눅스 상에서 개발되고 있다.<p>
+  서버 뿐만이 아닌 모바일에도 Linux가 많이 쓰이고 있다. 안드로이드가 리눅스 커널로 만들어졌다는 사실은 잘 알려져 있다. 인터넷 공유기, CCTV 녹화기, UHD 기기 등등 가전용 단말기기에도 리눅스가 사용된다. 키오스크, 각종 IOT 제어 기기등의 상업용 및 산업용 기기에도 리눅스가 사용된다. 그밖에 각종 임베디드 보드에서도 리눅스를 사용한다. 자동차 인포테인먼트 기기나 등 전기차에서 또한 리눅스를 쓴다. </h3>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Programing Introduction</title>
+<style>
+h3 {
+  font-size:25px;
+}
+  input[id="menuicon"] {
+    display:none;
+  }
+  input[id="menuicon"] + label {
+    display:block;
+    width:45px;
+    height:30px;
+    position:relative;
+    cursor:pointer;
+    margin-right: 0px;
+  }
+  h2 {
+    margin: 0px;
+    padding: 15px;
+    width:   120px;
+    display: block;
+  }
+  a {
+    text-decoration:none;
+  }
+  h1 a{
+    color:black;
+    text-decoration:none;
+  }
+  h1 {
+    border-bottom: 2px black solid ;
+    margin:0;
+    padding: 20px;
+    display: block;
+  }
+  b {
+    display:block;
+    position:absolute;
+    width:100%;
+    height:4px;
+    border-radius:30px;
+    background:#000;
+    transition:all .35s;
+  }
+  input[id="menuicon"] + label b:nth-child(1) {
+    top:0;
+  }
+  input[id="menuicon"] + label b:nth-child(2) {
+    top:50%;
+    transform:translateY(-50%);
+  }
+  input[id="menuicon"] + label b:nth-child(3) {
+    bottom:0;
+  }
+  input[id="menuicon"]:checked + label b:nth-child(1) {
+    top:50%;
+    transform:translateY(-50%) rotate(45deg);
+    left:300px;
+  }
+  input[id="menuicon"]:checked + label b:nth-child(2) {
+    opacity:0;
+  }
+  input[id="menuicon"]:checked + label b:nth-child(3) {
+    bottom:50%;
+    transform:translateY(50%) rotate(-45deg);
+    left:300px;
+  }
+  div[class="sidebar"] {
+    width:300px;
+    height:100%;
+    background:#222;
+    position:fixed;
+    top:0;
+    left:-300px;
+    z-index:0;
+    transition:all .35s;
+  }
+  input[id="menuicon"]:checked + label + h1 + div  {
+    left:0;
+    z-index: 0;
+    background: #222;
+  }
+  #grid{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+  }
+</style>
+<input type="checkbox" id="menuicon">
+<label for="menuicon">
+<b></b>
+<b></b>
+<b></b>
+</label>
+</head>
+
+<body>
+<h1 style="text-align:center; margin-bottom: 0px;"><a href="Programing.html" style="font-size:45px">Java</a></h1>
+  <div class="sidebar">
+    <ul>
+      <h2><a href="Programing.html" style="color:white">HOME</a></h2>
+      <h2><a href="C.html" style="color:white">C</a></h2>
+      <h2><a href="C++.html" style="color:white">C++</a></h2>
+      <h2><a href="python.html" style="color:white">Python</a></h2>
+      <h2><a href="Java.html" style="color:white">Java</a></h2>
+      <h2><a href="Linux.html" style="color:white">Linux</a></h2>
+      <h2><a href="Node js.html" style="color:white">Node.js</a></h2>
+      <h2><a href="html.html" style="color:white">HTMl</a></h2>
+      <h2><a href="JavaScript.html" style="color:white">JavaScript</a></h2>
+      <h2 style="vertical-align:bottom; font-size:20px; margin-top:110px;"><a href="https://forms.gle/1vLH1Z663bRzdj958" style="color:#FF4500">설문조사</a></h2>
+    </ul>
+  </div>
+  <h3>객체 지향 프로그래밍 언어로서 보안성이 뛰어나며 컴파일한 코드는 다른 운영 체제에서 사용할 수 있도록 클래스(class)로 제공된다. 객체 지향 언어인 C++ 언어의 객체 지향적인 장점을 살리면서 분산 환경을 지원하며 더욱 효율적이다<p>
+
+자바는 간단하다 (simple)① 하나의 소프트웨어가 제작될 때는 소프트웨어를 제작하는 비용도 많이 들지만 유지 보수하는 비용도 어마어마하다. 자바 언어는 이러한 점을 고려하여 디자인되었다. 자바 언어는 C++를 기반으로 개발되었음에도 C++에서 혼란을 일으키는 부분을 제거했다. 예를 들면 연산자 오버로딩, 다중 상속 같은 것들이다. 그리고 C++에서 문제가 되는 기억 장소 경영 문제를 자동 쓰레기 회수와 할당(auto garbage collection)으로서 극복했다. 그러므로 프로그래머는 이것에 더이상 신경을 쓸 필요가 없다.<p>
+② 자바는 객체 지향 언어이다 (object-oriented)요즘의 컴퓨터 언어는 객체 지향 언어로 개발된다. 자바도 객체 지향 언어이다. 객체 지향 언어에 대해 여기서 자세히 언급할 수는 없고 간단한 일례를 들면 상속이라는 것이 있다. 부모 객체로부터 자식 객체는 상속을 한다. 자식 객체가 부모 객체로부터 상속을 받으면 부모 객체의 데이터와 메소드를 사용할 수 있음을 의미한다. 따라서 소프트웨어를 개발할 때 재활용 측면에서 많은 장점을 가진다.<p>
+
+③ 자바는 보안에 강하다 (secure)자바는 원래부터 네트워크 분산 처리 환경에서 사용하기 위해 디자인된 언어이다. 네트워크 환경은 다른 환경보다 보안의 측면이 강조되는 환경인 만큼 자바는 보안에 중점을 두고 있다. 자바는 바이러스가 침투하지 못하는 구조를 가지고 메모리에서 데이터 접근을 제한할 수 있다. 접근을 허용하지 않으면, 애플리케이션의 데이터 구조 또는 데이터에 대한 접근은 불가능하다.<p>
+
+⑤ 자바는 이식성이 높다 (portable)기존의 언어는 각각의 플랫폼마다 수치 연산 문제 등으로 인하여 약간씩 다른 코드를 사용한다. 그러나 자바는 이식성이 강하여 다른 운영 체제, 다른 CPU에서도 같은 코드를 사용할 수 있다. 이식성이 높을 때의 단점은 각각의 시스템의 특성을 고려하지 않기 때문에 최적의 성능을 얻어낼 수 없는데, 자바는 이러한 것을 극복한 언어이다.<p></h3>
+</body>
+</html>
