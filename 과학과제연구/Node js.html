@@ -98,10 +98,10 @@ h3 {
 </head>
 
 <body>
-<h1 style="text-align:center; margin-bottom: 0px;"><a href="Programing.html" style="font-size:45px">Node.js</a></h1>
+<h1 style="text-align:center; margin-bottom: 0px;"><a href="index.html" style="font-size:45px">Node.js</a></h1>
   <div class="sidebar">
     <ul>
-      <h2><a href="Programing.html" style="color:white">HOME</a></h2>
+      <h2><a href="index.html" style="color:white">HOME</a></h2>
       <h2><a href="C.html" style="color:white">C</a></h2>
       <h2><a href="C++.html" style="color:white">C++</a></h2>
       <h2><a href="python.html" style="color:white">Python</a></h2>
@@ -114,7 +114,7 @@ h3 {
     </ul>
   </div>
   <h3>Node.js는 JavaScript로 브라우저 밖에서 서버를 구축하는 등의 코드를 실행할 수 있게 해주는 런타임 환경이다. Ryan Dahl이 처음 개발했으며 처음엔 리눅스와 macOS만 지원되었으나 이후에 Windows 버전도 발표되었다. 빈번한 I/O처리에 있어서의 우수한 성능, 서버 확장의 용이성, 무엇보다도 JavaScript라는 프론트엔드 필수 언어로 백엔드까지 작성할 수 있다는 엄청난 장점 때문에 출시 이후로 빠르게 점유율을 높여가고 있다. 다만 JavaScript로 만들 수 있다는 말만 듣고 도전했다가 실패하는 이도 많다.<p>
-    
+
   단점은 프로그램이 리액터 패턴에 의한 CPS(Continuation-Passing Style)로 작성되는데, 이것이 Node.js에 고성능을 선사하는 기법인 동시에 비숙련자에게 힘든 존재가 된다. 고성능 비동기 프로그램을 작성하기 위해서는 파일시스템을 포함한 프로그램 전체가 비동기화 지점마다 CPS로 연결되어야 한다. 이러한 CPS의 특징 때문에 Node.js 초심자는 콜백 지옥을 경험하게 된다. 쉽게 설명하자면 코드가 무한 들여쓰기로 작성돼서 소스코드가 대각선으로 쓰여지는 현상을 말한다.<p>
 
   두 번째 단점은 노드가 기본적으로 오류 핸들링을 안하면 예외발생으로 프로그램이 꺼진다는 점이다. 보안접속 하는 형태에 피치못할 사정으로 접속을 항시 유지한다면 매 주기별로 재응답 해주겠으나 혹시모를 접속끊김이 발생할 여지는 많은데 절대로 간과하면 안되는 형태로 되어있다. 따라서 오류 핸들링을 통한 재접속을 하던가 다음 처리가 요청될 때까지 접속 끊김을 명확하게 제어해야한다.</h3>
